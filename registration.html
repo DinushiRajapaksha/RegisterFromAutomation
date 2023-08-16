@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>Sample HTML Form</title>
+  <style type="text/css">
+    
+    input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea, select {
+      width:95%;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], select {
+      height:30px;
+    }
+  </style>
+</head>
+<body>
+  <form method="" action="">
+    <table border="1" align="center" width="500" bgcolor="#CCCCCC" >
+      <caption>Registration Form</caption><br>
+      <tr>
+        <th>Enter your first name</th>
+        <td><input type="text" name="fn" id="fn1" placeholder="Enter your first name" required/></td>
+      </tr>
+      <tr>
+        <th>Enter your last name</th>
+        <td><input type="text" id="fn2" placeholder="Enter your last name"/></td>
+      </tr>
+      <tr>
+        <th>Enter your password</th>
+        <td><input type="password" name="pass1" placeholder="Enter your password"/></td>
+      </tr>
+      <tr>
+        <th>Re Enter your password</th>
+        <td><input type="password" name="pass2" placeholder="Retype your above password"/></td>
+      </tr>
+      <tr>
+        <th>Enter your email</th>
+        <td><input type="email" id="email" placeholder="Enter your email"/></td>
+      </tr>
+      <tr>
+        <th>Enter your mobile</th>
+        <td><input type="text" name="mobile" placeholder="Enter your mobile number"/></td>
+      </tr>
+      <tr>
+        <th>Enter your address</th>
+        <td>
+          <textarea rows="8" cols="20" id="description" placeholder="Enter your address"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <th>Select your gender</th>
+        <td>
+          Male <input type="radio" name="g" value="m" id="male"/>
+          Female <input type="radio" name="g" value="f" id="female"/>
+        </td>
+      </tr>
+      <tr>
+        <th>Select your hobbies</th>
+        <td>
+          Hobby1 <input type="checkbox" name="x[]" value="h" class="automation1"/>
+          Hobby2 <input type="checkbox" name="x[]" value="h2" class="automation2"/>
+          Hobby3 <input type="checkbox" name="x[]" value="h3" class="automation3"/>
+      </td>
+      </tr>
+      <tr>
+        <th>Select your Country</th>
+        <td>
+          <select name="country" id="country">
+            <option value="" selected="selected" disabled="disabled">Select your country</option>
+            <option value="1">Sri Lanka</option>
+            <option value="2">India</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Save My Data"/>
+          <input type="reset" value="Reset Data"/>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
